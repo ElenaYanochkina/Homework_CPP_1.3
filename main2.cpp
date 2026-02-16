@@ -2,16 +2,17 @@
 
 int main()
 {
+	setlocale(LC_ALL, "rus");
 	int num1{};
 	int num2{};
 	int num3{};
-	std::cout << "Enter the first number: ";
+	std::cout << "Введите первое число: ";
 	std::cin >> num1;
-	std::cout << "Enter the second number: ";
+	std::cout << "Введите второе число: ";
 	std::cin >> num2;
-	std::cout << "Enter the third number: ";
+	std::cout << "Введите третье число: ";
 	std::cin >> num3;
-	std::cout << "Result: ";
+	std::cout << "Результат: ";
 	if (num1 >= num2)
 	{
 		if (num2 >= num3)
@@ -43,4 +44,5 @@ int main()
 	}
 
 	return EXIT_SUCCESS;
+
 }
