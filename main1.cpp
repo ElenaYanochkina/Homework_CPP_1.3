@@ -2,11 +2,12 @@
 
 int main()
 {
+	setlocale(LC_ALL, "rus");
 	bool t{ true };
 	bool f{ false };
 	int result{};
 	std::string word{};
-	std::cout << "Operator: ||" << std::endl;
+	std::cout << "Оператор: ||" << std::endl;
 	result = t || t;
 	if (result)
 		word = "true";
@@ -30,7 +31,7 @@ int main()
 	
 
 
-	std::cout << "Operator: &&" << std::endl;
+	std::cout << "Оператор: &&" << std::endl;
 	result = t && t;
 	if (result)
 		word = "true";
@@ -53,4 +54,5 @@ int main()
 	std::cout << "false	false	" << word << std::endl;
 
 	return EXIT_SUCCESS;
+
 }
